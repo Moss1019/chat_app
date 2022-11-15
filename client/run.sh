@@ -1,4 +1,3 @@
-#!/bin/zsh
 FOLDER_EXISTS=false
 [ -d "./build" ] && FOLDER_EXISTS=true
 

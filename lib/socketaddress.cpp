@@ -1,5 +1,7 @@
 #include "socketaddress.hpp"
 
+#include <cstring>
+
 SocketAddress::SocketAddress()
 {
 

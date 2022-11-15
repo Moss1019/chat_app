@@ -65,7 +65,7 @@ void AddressClient::getAddresses(std::vector<AddressInfo> &addresses) const
         in.readData(addressBuffer, addressLength);
         std::string ipAddress(addressBuffer, addressLength);
         delete[] addressBuffer;
-        if((port == m_port && ipAddress != m_ipAddress) || (port != m_port && ipAddress == m_ipAddress))
+        if(!(m_port == port && m_ipAddress == ipAddress))
         {
             addresses.push_back(AddressInfo{});
             addresses.back().ipAddress = ipAddress;

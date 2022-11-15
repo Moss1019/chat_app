@@ -20,7 +20,7 @@ int main(int argc, char **argv)
     }
 
     SocketAddress server("192.168.1.182", rmtPort);
-    SocketAddress local("192.168.1.182", port);
+    SocketAddress local("192.168.1.37", port);
     AddressClient client(local, server);
     ChatClient chatClient(local, [](const SocketAddress &remote, const std::string &msg)
     {
